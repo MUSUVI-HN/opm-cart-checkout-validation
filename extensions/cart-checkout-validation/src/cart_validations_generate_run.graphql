@@ -1,0 +1,19 @@
+query CartValidationsGenerateRunInput {
+  cart {
+    lines {
+      quantity
+      merchandise {
+        ... on ProductVariant {
+          id
+          product {
+            title
+            handle
+            metafield(namespace: "custom", key: "order_limit") {
+              value
+            }
+          }
+        }
+      }
+    }
+  }
+}
