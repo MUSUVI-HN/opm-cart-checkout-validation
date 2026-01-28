@@ -24,7 +24,7 @@ export function cartValidationsGenerateRun(input) {
 
     if (limit != null && quantity > limit) {
       errors.push({
-        message: `${title} はお一人様${limit}点限りです。`,
+        message: `${title} is limited to ${limit} per customer.`,
         target: "cart"
       });
     }
