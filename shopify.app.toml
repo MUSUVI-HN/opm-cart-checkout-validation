@@ -2,12 +2,11 @@
 
 client_id = "93c274faaa14644531e33e461b2c7ff5"
 name = "opm-cart-checkout-validation"
-application_url = "https://example.com"
+application_url = "https://opm-cart-checkout-validation.onrender.com"
 embedded = true
 
 [build]
 automatically_update_urls_on_dev = true
-include_config_on_deploy = true
 
 [webhooks]
 api_version = "2026-04"
@@ -25,4 +24,4 @@ api_version = "2026-04"
 scopes = "write_products"
 
 [auth]
-redirect_urls = [ "https://admin.shopify.com/store/otakupopmall/api/auth" ]
+redirect_urls = [ "https://opm-cart-checkout-validation.onrender.com/api/auth" ]
